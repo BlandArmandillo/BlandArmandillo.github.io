@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Righteous');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-image: url(https://cdn.discordapp.com/attachments/888353918009114626/943132998927286332/memphis-mini-dark.png);
+  min-height: 200vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+footer {
+  background-color: rgba(0 0 0 / .7);
+  height: 10vh;
+  border-top: 2px solid blueviolet;
+}
+
+li, a, button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight:900;
+    color: white;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+header {
+    z-index: 99999;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    border-bottom: 2px solid blueviolet;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+}
+
+.logo {
+    font-family: 'Righteous', cursive;
+    font-variant: small-caps;
+    font-weight: 100;
+    font-size: 25px;
+    margin-right: 25px;
+    color: white;
+    padding: 10px;
+    margin-left: -50px;
+    transition: all 0.3s ease 0s;
+}
+
+.logo:hover{
+    color: rgba(137, 43, 226, 0.651);
+}
+
+header > h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-right: auto;
+    transition: all 0.3s ease 0s;
+    cursor: default;
+}
+
+
+.navi {
+    list-style: none;
+}
+
+.navi li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navi li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navi li a:hover {
+    color: blueviolet;
+}
+
+header > button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header > button:hover {
+    background-color: rgba(137, 43, 226, 0.651);
+}
+
+.banner {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border-bottom: 2px solid blueviolet;
+}
+.banner::before{
+    content: "";
+    background-image: url("https://images.unsplash.com/photo-1624378515195-6bbdb73dff1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom:0px;
+    opacity: 50%;
+}
+.banner > div {
+    position: absolute;
+    top: 45%;
+    width: 33%;
+    left: 55%;
+}
+.banner > div > h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    color: white;
+    font-size: 56px;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}
+.banner > div > p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    color: white;
+    font-size: 46px;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}
+.banner > div > .who {
+    margin:0;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: blueviolet;
+    color: black;
+    text-shadow: none;
+}
+
+header.sticky{
+    padding: 5px 10%;
+    background-color: #000000ef;
+}
+
+section {
+  margin: auto;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 80%;
+}
+
+section > h2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 72px;
+  font-weight:900;
+  font-variant: small-caps;
+  text-align: left;
+  margin: 0;
+  padding: 8%;
+  text-decoration: underline;
+  text-decoration-color: blueviolet;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+[class ^="block-"]{
+  display: flex;
+  flex-direction: row;
+  height: 35vh;
+  padding: 0;
+}
+
+[class ^="box-"]{
+  width: 40vw;
+  color: white;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+[class ^="box-"] h3{
+  font-variant: small-caps;
+  padding:8%;
+  font-size: 2rem;
+}
+
+[class ^="box-"] h2{
+  font-variant: small-caps;
+  padding:2%;
+  font-size: 2rem;
+  text-align: center;
+}
+
+[class ^="box-"] p {
+  margin: 0 8%;
+  font-size: 1.3rem;
+}
+
+.box-1{
+  border-right: 2px solid blueviolet;
+  border-bottom: 2px solid blueviolet;
+}
+.box-2{
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid blueviolet;
+}
+.box-3{
+  border-right: 2px solid blueviolet;
+  border-top: 2px solid blueviolet;
+}
+.box-4{
+  border-left: 2px solid blueviolet;
+  border-top: 2px solid blueviolet;
+}
+.box-5{
+  border-right: 2px solid blueviolet;
+}
+.box-6{
+  border-left: 2px solid blueviolet;
+}
+.box-7 > p {
+  text-align: center;
+}
+.box-8 > p {
+  text-align: center;
+}
+.box-7{
+  width: 50%;
+}
+.box-8{
+  width: 50%;
+}
+.block-4{
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  padding: 0;
+  margin: 0 25%;
+}
+
+
+.myinfo{
+  width: 40%;
+  color: white;
+  margin-right: 19%;
+  margin-top: 2%;
+  float:right;
+  font-family: 'Montserrat', sans-serif;
+  padding:1% 10%;
+}
+
+.myinfo h3{
+  font-size: 2rem;
+  font-variant: small-caps;
+}
+
+.myinfo p {
+  padding: 4%;
+}
+
+.myinfo h5{
+  font-size: 0.9rem;
+  color: white;
+  font-variant: small-caps;
+}
+
+
+.portrait > figure img{
+  height: 40vh;
+  width: 20vw;
+  border-bottom: 5px solid blueviolet;
+  border-radius: 20px 20px 0 0;
+  float: left;
+  margin-left: 15%;
+
+}
+
+.incheck {
+  width: 100%;
+  height: 52vh;
+}
+
+
+
+
+#projects a{
+  color: blueviolet;
+  transition: all 0.3s ease 0s;
+}
+#projects a:hover{
+  color: #3e1754;
+  text-decoration:underline;
+  text-decoration-thickness: 2px;
+}
+
+.socials {
+    list-style: none;
+}
+
+.socials li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.socials li a {
+    transition: all 0.3s ease 0s;
+    font-size: 2rem;
+    color: blueviolet;
+}
+
+.socials li a:hover {
+    color: #3e1754;
+}
+
+.message {
+  width: 80%;
+  margin:auto;
+  color: white;
+  display: block;
+  text-align: center;
+  padding:0;
+  padding-bottom:5%;
+}
+input{
+    font-family: 'Montserrat', sans-serif;
+    margin: 1% 1%;
+    border: 2px solid blueviolet;
+    padding: 20px;
+}
+input[type=submit]{
+    font-family: 'Montserrat', sans-serif;
+    background: blueviolet;
+    font-weight: 900;
+
+}
+
+input:not([type="submit"]):valid {
+    background-color: #ccffcc;
+}
