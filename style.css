@@ -3,7 +3,7 @@
   font-family: 'Open Sans';
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
-  --bg-primary: #23232e;
+  --bg-primary: hsl(214,16%,24%);
   --bg-secondary: #141418;
   --clr-acc:hsl(186,70%,70%);
   --clr-acc2:rgb(82, 144, 151);
@@ -27,7 +27,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: var(--clr-acc);
 }
 
 main {
@@ -81,7 +81,7 @@ main {
   width: 2rem;
   min-width: 2rem;
   margin: 0 1.5rem;
-  fill: var(--text-primary);
+  fill: var(--clr-acc);
   transition: var(--transition-speed);
 }
 
@@ -125,7 +125,7 @@ main {
 
 .hero-background img{
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     object-fit: cover;
     object-position: center bottom;
     opacity: 50%;
@@ -158,6 +158,10 @@ main {
   background-color: var(--clr-acc);
   cursor: pointer;
   color: black;
+}
+
+.gdesc {
+  display: none;
 }
 
 .mobile-logo{
@@ -263,9 +267,21 @@ main {
     top: 20%;
     left: 18%;
     font-size: 4rem;
-    line-height: .8;
+    line-height: .9;
   }
 
+  .gdesc {
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  .gdesc hr{
+    margin-inline: 0;
+    margin-top: 1rem;
+    width: 20vw;
+  }
   .gbut {
     padding-block: 1.2rem;
     font-size: 1.3rem;
