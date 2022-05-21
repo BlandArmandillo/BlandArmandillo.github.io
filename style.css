@@ -16,7 +16,6 @@ html {
 
 body {
   color: black;
-  background-color: white;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -210,26 +209,52 @@ main {
   padding-block: 3rem;
   display: grid;
   grid-template-areas: 
-  '1 2 3'
-  '4 5 6';
+  '1 2'
+  '3 4'
+  '5 6 ';
   gap: .5rem;
 }
 
 .clink {
-  background-color: blueviolet;
-  padding: 1rem;
-  height: 15rem;
+  background-color: var(--clr-acc);
+  padding: 2rem;
+  transition: var(--transition-speed) ease-in;
+}
+
+.linkdesc {
+  display: none;
+}
+
+.clink:hover h2{
+  display: none;
+}
+
+.clink:hover .linkdesc{
+  display: block;
 }
 
 .cdesc {
-  border: 1rem solid var(--clr-acc);
-  height: 15rem;
-  background-color: beige;
+  padding: 2rem;
+  background-color: var(--clr-acc);
+  color: white;
+  text-align: center;
 }
 
-.desc {
-  height: 87%;
+.websites {
+  background: rgba(0 0 0 / .5)url(https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
 }
+
+.programs {
+  background: rgba(0 0 0 / .5)url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
@@ -337,5 +362,11 @@ main {
     border-radius: 0 20px;
   }
 
+  .container {
+    grid-template-areas: 
+    '1 6'
+    '2 3'
+    '4 5 ';
+  }
   
 }
